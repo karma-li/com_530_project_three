@@ -314,6 +314,30 @@ img {
 /* 1100px / 16px = 68.75em */
 @media screen and (min-width: 68.75em) {
   #navigation {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+
+  #interests {
+    margin-left: 14em;
+    margin-right: 14em;
+}
+
+/* 1200px / 16px = 75em */
+@media screen and (min-width: 75em) {
+  #navigation {
+    margin-left: 9.5em;
+    margin-right: 9.5em;
+  }
+
+  #interests {
+    margin-left: 16.5em;
+    margin-right: 16.5em;
+}
+
+/* 1300px / 16px = 81.25em */
+@media screen and (min-width: 81.25em) {
+  #navigation {
     margin-left: 30%;
     margin-right: 30%;
     width: 40%;
