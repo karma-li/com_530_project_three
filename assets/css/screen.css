@@ -16,14 +16,16 @@ html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222em */
   padding: 1.222em 1.833em; /* 33px / 18px = 1.833em */
+  background-color: #c6c5c0;
 }
 
 h1 {
   font-family: "Amatic SC", cursive;
-  font-size: 4.768em; /* 85.831px / 18px = 4.768em */
-  line-height: 9.355em; /* 327.418px / 35px = 9.355em */
+  font-size: 3.052em; /* 54.932px / 18px = 3.052em */
+  line-height: 2.441em; /* 85.449px / 35px = 2.441em */
   text-transform: uppercase;
   text-align: center;
+  color: #6b7d98;
 }
 
 h2 {
@@ -36,9 +38,24 @@ h2 {
 	color: #7F8D9D;
 }
 
-p {
+h3 {
   font-family: "Open Sans Condensed", sans-serif;
-	font-size: 1.05em; /* 18.9px / 18px = 1.05em */
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.691em; /* 47.35px / 28px = 1.691em */
+  color: #84786F;
+}
+
+h4 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.05em; /* 18.9px / 18px = 1.05em */
+  line-height: 1.602em;/* 28.833px / 18px = 1.602em */
+  color: #84786F;
+}
+
+p,
+figcaption {
+  font-family: "Open Sans Condensed", sans-serif;
+	font-size: 1.1em; /* 19.8px / 18px = 1.1em */
 	padding-top: 1em;
 	padding-bottom: 1em;
 	padding-left: 1em;
@@ -46,8 +63,305 @@ p {
 	color: #84786F;
 }
 
+#about_me p {
+  line-height: 150%;
+}
+
+#resume li {
+  line-height: 150%;
+}
+
+ol li {
+  display: list-item;
+  list-style-type: decimal;
+}
+
+#education ul li,
+#experience ul li,
+#associations ul li {
+  display: list-item;
+  list-style-type: circle;
+}
+
+li {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.05em; /* 18.9px / 18px = 1.05em */
+  color: #84786F;
+}
+
+#contact {
+  text-align: center;
+}
+
 .copyright {
   font-family: "PT Sans", sans-serif;
 	font-size: 0.8em; /* 14.4px / 18px = 0.8em */
 	padding-top: 2.441em; /* 43.945px / 18px = 2.441em */
+}
+
+/* Navigation Styles */
+#navigation {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c6c5c0;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.25em; /* 22.5px / 18px = 1.25em */
+  display: block;
+  line-height: 0;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
+  margin-bottom: 0.889em; /* 16px / 18px = 0.889em */
+  color: #7F8D9D;
+  border: 0.056em solid #7F8D9D; /* 1px / 18px = 0.056em */
+}
+
+.menu li a:hover,
+.menu li a:active,
+.menu li a:focus {
+  background-color: #7F8D9D;
+  color: #c6c5c0;
+}
+
+/* Responsive Media */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.photo {
+  float: left;
+  margin-right: 1em;
+}
+
+#introduction {
+  font-size: 1.25em; /* 22.5px / 18px = 1.25em */
+  line-height: 200%;
+}
+
+.illustration_1 {
+  display: flex;
+	flex-flow: wrap;
+}
+
+.pictures li {
+  width: 50%;
+	flex: 1 0 auto;
+	float: left;
+}
+
+.illustration_2 {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* Content Styles */
+#about,
+#about_me,
+#education,
+#experience,
+#associations {
+	display: grid;
+	margin-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+  padding-left: 6.583em; /* 118.499px / 18px = 6.583em */
+  padding-right: 6.583em; /* 118.499px / 18px = 6.583em */
+}
+
+#contact {
+	display: grid;
+	margin-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+}
+
+#interests {
+  display: grid;
+  margin-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+  margin-left: 3.815em; /* 68.665px / 18px = 3.815em */
+  margin-right: 3.815em; /* 68.665px / 18px = 3.815em */
+}
+
+/* State Styles */
+/* 360px / 16px = 22.5em */
+@media screen and (min-width: 22.5em) {
+  .menu li a {
+    font-size: 1em;
+    padding: 0.8em 1em; /* 14.4px / 18px = 0.8em */
+    margin-bottom: 0.512em; /* 9.216px / 18px = 0.512 */
+    width: 4em;
+  }
+
+  .photo,
+  #introduction {
+    padding-left: 0.64em; /* 11.52px / 18px = 0.64em */
+		padding-right: 0.64em; /* 11.52px / 18px = 0.64em */
+  }
+
+  #about,
+  #about_me,
+  #education,
+  #experience,
+  #associations {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #introduction {
+    font-size: font-size: 1.1em; /* 19.8px / 18px = 1.1em */
+  }
+
+  #introduction p {
+    line-height: 150%;
+  }
+
+  #interests {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .pictures li,
+  .illustration_2 {
+    width: 100%;
+  }
+}
+
+/* 500px / 16px = 31.25em */
+@media screen and (min-width: 31.25em) {
+  #navigation {
+    display: block;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 100%;
+  }
+
+  .menu li a {
+    width: 6.5em;
+  }
+}
+
+/* 700px / 16px = 43.75em */
+@media screen and (min-width: 43.75em) {
+  #navigation {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 100%;
+  }
+
+  #interests {
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+  }
+}
+
+/* 800px / 16px = 50em */
+@media screen and (min-width: 50em) {
+  #navigation {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+
+/* 900px / 16px = 56.25em */
+@media screen and (min-width: 56.25em) {
+  #navigation {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+
+  #interests {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+}
+
+/* 1000px / 16px = 62.5em */
+@media screen and (min-width: 62.5em) {
+  #navigation {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .menu li a {
+    font-size: 1.25em; /* 22.5px / 18px = 1.25em */
+    padding: 1em;
+    margin-bottom: 0.889em; /* 16px / 18px = 0.889em */
+  }
+
+  #interests {
+    margin-left: 12em;
+    margin-right: 12em;
+  }
+}
+
+/* 1100px / 16px = 68.75em */
+@media screen and (min-width: 68.75em) {
+  #navigation {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+  }
+
+  .menu li a {
+    width: auto;
+  }
+
+  .photo {
+    margin-right: 1em;
+    padding-left: 0.64em; /* 11.52px / 18px = 0.64em */
+		padding-right: 0.64em; /* 11.52px / 18px = 0.64em */
+  }
+
+  #introduction {
+    font-size: 1.25em; /* 22.5px / 18px = 1.25em */
+    line-height: 200%;
+    padding-left: 0.64em; /* 11.52px / 18px = 0.64em */
+		padding-right: 0.64em; /* 11.52px / 18px = 0.64em */
+  }
+
+  .illustration_1 {
+    display: flex;
+  	flex-flow: wrap;
+  }
+
+  .pictures li {
+    width: 50%;
+  	flex: 1 0 auto;
+  	float: left;
+  }
+
+  .illustration_2 {
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  }
+
+  #about,
+  #about_me,
+  #education,
+  #experience,
+  #associations {
+  	display: grid;
+  	margin-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+    padding-left: 6.583em; /* 118.499px / 18px = 6.583em */
+    padding-right: 6.583em; /* 118.499px / 18px = 6.583em */
+  }
 }
